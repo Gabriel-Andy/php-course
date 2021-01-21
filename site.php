@@ -7,16 +7,11 @@
 </head>
 <body>
     <?php
-    $characterName = "Gabroel";
-    $characterAge = 29;
-
-    echo"There once was a man named $characterName <br>";
-    echo "he was $characterAge years old <br>";
-    $characterName = "batisseur fono";
-    $characterAge = 32;
-    echo "he really liked the name $characterName <br>";
-     echo "was $characterAge years old <br>";
-    echo "nuy didn't like bieng $characterAge <br>";
+   $phrase = "to be or not to be"; // string
+   $age = 30;// integer
+   $gpa = 30.0; // floating number
+   $isMale = true; // bolean
+   null
     ?>
 
 </body>
