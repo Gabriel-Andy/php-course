@@ -7,11 +7,7 @@
 </head>
 <body>
     <?php
-   $phrase = "to be or not to be"; // string
-   $age = 30;// integer
-   $gpa = 30.0; // floating number
-   $isMale = true; // bolean
-   null
+  echo floor(4.1);
     ?>
 
 </body>
