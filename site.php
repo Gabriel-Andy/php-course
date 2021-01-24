@@ -8,7 +8,7 @@
 <body>
 <h2>this is my calulator</h2>
 <form action = "site.php" method = "post">
-num1: <input type = "number"   name = "num1" /> <br>
+num1: <input type = "number" step = "0.001"   name = "num1" /> <br>
 operator: <input type = "text"  name = "operator" /><br>
 num2: <input type = "number" name = "num2" /><br>
 <input type = "submit"/>
@@ -19,19 +19,23 @@ num2: <input type = "number" name = "num2" /><br>
      $num2 = $_POST['num2'];
      $operator = $_POST["operator"];
    function output($operator,$num1,$num2) {
-       if($operator == "+") {
-        echo $num1 + $num2;
-     }
-     elseif($operator == "-"){
+     switch($operator) {
+       case "+" :
+       echo $num1 + $num2;
+       break;
+       case "-" :
        echo $num1 - $num2;
-     }
-     elseif($operator == "/") {
+       break;
+      case "/" :
        echo $num1 / $num2;
-     }elseif($operator == "*") {
-        echo $num1 * $num2;
-     } else {
+       break;
+       case "*" :
+       echo $num1 * $num2;
+       break;
+       default :
        echo "invalid operator";
      }
+      
   }
   output($operator,$num1,$num2)
        
