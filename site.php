@@ -6,12 +6,22 @@
     <title>This is my php project</title>
 </head>
 <body>
-<?php 
-$title = "my first post";
-$author = "Gabriel Fono";
-$wordCount = 400;
-include "article-header.php"
-?>
+  <?php
+  class Book {
+    var $title;
+    var $author;
+    var $pages;
+  }
+  $book1  = new Book;
+  $book2 = new Book;
+  $book1 -> title = "harry poter";
+  $book1 -> author = " jk Rouling";
+  $book1 -> pages  = 400;
+  $book2 -> title = "gabriel fono";
+  echo $book1 -> author;
+  
+  echo $book2 -> title;
+  ?>
 
 
 </body>
