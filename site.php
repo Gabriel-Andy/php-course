@@ -23,6 +23,9 @@
 function makePasta(){
   echo "I could make pasta";
 }
+   function makeChiken(){
+     echo "I love coding challenge <br>";
+   }
  }
  $chef = new Chef();
  $italianChef = new ItalianChef();
