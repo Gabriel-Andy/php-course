@@ -24,9 +24,9 @@
       $lastName = $_GET["lastName"];
       $age = $_GET["age"] ;
       $goal = $_GET["goals"];
-      echo "you firstname is $firstName ";
-      echo "you lastname is $lastName";
-      echo "you age is $age ";
+      echo "you firstname is $firstName <br> ";
+      echo "you lastname is $lastName<br>";
+      echo "you age is $age<br>";
       echo "you goal is $goal ";
       ?>
 
