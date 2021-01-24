@@ -7,21 +7,31 @@
 </head>
 <body>
   <?php
-  class Book {
-    var $title;
-    var $author;
-    var $pages;
-    function __construct($atitle, $aAuthor, $aPages){
-     $this->title = $atitle;
-     $this->author = $aAuthor;
-     $this->pages = $aPages;
-   }
-  }
-  $book1  = new Book("Gabriel", "batisseur fono ", 400);
-  $book2  = new Book("fono", "kenko", 500);
-  echo $book1->author;
-  echo $book2->author;
+  class Student {
+    var $name;
+    var $major;
+    var $gpa;
 
+    function __construct($name, $major, $gpa){
+     $this->name = $name;
+     $this->major = $major;
+     $this->gpa= $gpa;
+   }
+   function hasHonors(){
+     if($this->gpa >= 3.5){
+      return "I am on the honor";
+     }
+     return "I am not honorable student";
+   }
+   
+  }
+  
+  $student1 = new Student("jim", "busness", 2.5);
+  $student2 = new Student ("pam", "civil engineering", 3.6);
+  $student3 = new Student("kenko", "accountant", 3.5);
+ 
+
+   echo $student3->hasHonors();
   
 
   ?>
