@@ -8,16 +8,27 @@
 <body>
   
     <form action = "site.php" method = "get">
-    num1:<input type = "number" name = "num1"/>
+    firstname:<input type = "text" name = "firstName"/>
     <br>
-    num2:<input type = "number" name = "num2"/>
+    lastname:<input type = "text" name = "lastName"/>
     <br>
-    num3:<input type = "number" name = "num3"/>
+    age:<input type = "number" name = "age"/>
+    <br>
+    goal: <input type= "text" name = "goals"/>
     <br>
     <input type = "submit"/>
     </form>
     <br>
-      your answer :<?php echo $_GET["num1"] * $_GET["num3"] + $_GET["num3"] ?>
+    <?php
+      $firstName = $_GET["firstName"] = $_GET["firstName"];
+      $lastName = $_GET["lastName"];
+      $age = $_GET["age"] ;
+      $goal = $_GET["goals"];
+      echo "you firstname is $firstName ";
+      echo "you lastname is $lastName";
+      echo "you age is $age ";
+      echo "you goal is $goal ";
+      ?>
 
 </body>
 </html>
