@@ -8,9 +8,9 @@
 <body>
 <h2>this is my calulator</h2>
 <form action = "site.php" method = "post">
-num1: <input type = "number"  value = 2 name = "num1" />
-operator: <input type = "text" value = "+" name = "operator" />
-num2: <input type = "number" name = "num2" />
+num1: <input type = "number"   name = "num1" /> <br>
+operator: <input type = "text"  name = "operator" /><br>
+num2: <input type = "number" name = "num2" /><br>
 <input type = "submit"/>
 </form>
 
@@ -18,7 +18,8 @@ num2: <input type = "number" name = "num2" />
     $num1 = $_POST['num1'];
      $num2 = $_POST['num2'];
      $operator = $_POST["operator"];
-     if($operator == "+") {
+   function output($operator,$num1,$num2) {
+       if($operator == "+") {
         echo $num1 + $num2;
      }
      elseif($operator == "-"){
@@ -31,6 +32,8 @@ num2: <input type = "number" name = "num2" />
      } else {
        echo "invalid operator";
      }
+  }
+  output($operator,$num1,$num2)
        
      ?>
 
