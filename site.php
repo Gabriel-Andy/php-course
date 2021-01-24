@@ -6,14 +6,17 @@
     <title>This is my php project</title>
 </head>
 <body>
-  <h1> understand array in php</h1>
+  <h1> use checkbox to output user choice</h1>
     <br>
+    <form action = "site.php" method = "post">
+    orange: <input type = "checkbox" name = "fruits[]" value = "arange"/><br>
+    banana: <input type = "checkbox" name = "fruits[]" value = "banana" /><br>
+    mango :<input type = "checkbox" name = "fruits[]" value = "mango"/></br>
+  <input type = "submit"/>
+    </form>
     <?php
-    $friends = array('Tabongue', "Yannick", "fono");
-    $friends[1]= "Zoubar la racaille";
-    $friends[3] = "Takis";
-    
-    echo count($friends)
+$fruits = $_POST["fruits"];
+echo count($fruits)
       ?>
 
 </body>
