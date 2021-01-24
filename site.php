@@ -11,15 +11,10 @@
 
 
     <?php
-     $index = 1;
-     do {
-       echo " I am number $index <br>";
-       $index++;
-       if($index == 6) {
-         echo "I love this number";
-       }
-     }
-     while($index < 6) 
+    $number = array(25,35,23,22,55,23,24);
+    for($i = 0; $i < count($number); $i++ ) {
+      echo("this is number $number[$i] <br>");
+    }
      ?>
 
 </body>
