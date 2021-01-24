@@ -9,15 +9,13 @@
   <h1> use checkbox to output user choice</h1>
     <br>
     <form action = "site.php" method = "post">
-    orange: <input type = "checkbox" name = "fruits[]" value = "arange"/><br>
-    banana: <input type = "checkbox" name = "fruits[]" value = "banana" /><br>
-    mango :<input type = "checkbox" name = "fruits[]" value = "mango"/></br>
+  <input type = "text" name = "students"/>
   <input type = "submit"/>
     </form>
     <?php
-$fruits = $_POST["fruits"];
-echo count($fruits)
-      ?>
+$grades = array("tabongue" => "bac c", "Takis" => "bac d", "Parker" => "bac F",);
+     echo $grades[$_POST["students"]];
+     ?>
 
 </body>
 </html>
