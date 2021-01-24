@@ -7,27 +7,13 @@
 </head>
 <body>
   
-    <form action = "site.php" method = "get">
-    firstname:<input type = "text" name = "firstName"/>
-    <br>
-    lastname:<input type = "text" name = "lastName"/>
-    <br>
-    age:<input type = "number" name = "age"/>
-    <br>
-    goal: <input type= "text" name = "goals"/>
-    <br>
+    <form action = "site.php" method = "post">
+    password: <input type = "password" name = "password"><br>
     <input type = "submit"/>
     </form>
     <br>
     <?php
-      $firstName = $_GET["firstName"] = $_GET["firstName"];
-      $lastName = $_GET["lastName"];
-      $age = $_GET["age"] ;
-      $goal = $_GET["goals"];
-      echo "you firstname is $firstName <br> ";
-      echo "you lastname is $lastName<br>";
-      echo "you age is $age<br>";
-      echo "you goal is $goal ";
+     echo $_POST["password"]
       ?>
 
 </body>
