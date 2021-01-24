@@ -11,16 +11,19 @@
     var $title;
     var $author;
     var $pages;
+    function __construct($atitle, $aAuthor, $aPages){
+     $this->title = $atitle;
+     $this->author = $aAuthor;
+     $this->pages = $aPages;
+   }
   }
-  $book1  = new Book;
-  $book2 = new Book;
-  $book1 -> title = "harry poter";
-  $book1 -> author = " jk Rouling";
-  $book1 -> pages  = 400;
-  $book2 -> title = "gabriel fono";
-  echo $book1 -> author;
+  $book1  = new Book("Gabriel", "batisseur fono ", 400);
+  $book2  = new Book("fono", "kenko", 500);
+  echo $book1->author;
+  echo $book2->author;
+
   
-  echo $book2 -> title;
+
   ?>
 
 
