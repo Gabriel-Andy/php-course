@@ -8,11 +8,16 @@
 <body>
   
     <form action = "site.php" method = "get">
-    username:<input type = "text" name = "username"/>
+    num1:<input type = "number" name = "num1"/>
+    <br>
+    num2:<input type = "number" name = "num2"/>
+    <br>
+    num3:<input type = "number" name = "num3"/>
+    <br>
     <input type = "submit"/>
     </form>
     <br>
-      your username is :<?php echo $_GET["username"]?>
+      your answer :<?php echo $_GET["num1"] * $_GET["num3"] + $_GET["num3"] ?>
 
 </body>
 </html>
