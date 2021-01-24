@@ -6,9 +6,13 @@
     <title>This is my php project</title>
 </head>
 <body>
-    <?php
-  echo floor(4.1);
-    ?>
+  
+    <form action = "site.php" method = "get">
+    username:<input type = "text" name = "username"/>
+    <input type = "submit"/>
+    </form>
+    <br>
+      your username is :<?php echo $_GET["username"]?>
 
 </body>
 </html>
